@@ -32,6 +32,20 @@ namespace Colecciones
 
             alumnos.Add(alumno1);
 
+            foreach(Alumno elemento in alumnos)
+            {
+                Console.WriteLine("Nombre:" +
+                    elemento.Nombre);
+                foreach(Materia materia in 
+                    elemento.Materias)
+                {
+                    Console.WriteLine("Materia: " +
+                        materia.Nombre);
+                }
+
+            }
+            Console.ReadLine();
+
         }
     }
 }
